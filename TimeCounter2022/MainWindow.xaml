@@ -44,6 +44,6 @@
         </ComboBox>
         <Button x:Name="StartBT" Content="Rozppocznij ziczanie" Grid.Column="1" Grid.Row="5" Margin="10" Grid.ColumnSpan="2" Click="StartBT_Click"/>
 
-        <Image Grid.Row="1" Grid.Column="4" Grid.RowSpan="6" Source="C:\Users\kryst\OneDrive\Pulpit\Nadia zdj dow 2.jpg"/>
+        <Image Grid.Row="1" Grid.Column="4" Grid.RowSpan="6" Source=""/>
     </Grid>
 </Window>
