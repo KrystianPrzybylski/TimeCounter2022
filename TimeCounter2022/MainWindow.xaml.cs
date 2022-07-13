@@ -25,10 +25,8 @@ namespace TimeCounter2022
         {
             InitializeComponent();
 
-            tasks.Add(new Task { NameTask = "zadanie 1", TotalTime = DateTime.MinValue, CurrentTime = DateTime.Now });
-            tasks.Add(new Task { NameTask = "zadanie 2", TotalTime = DateTime.MinValue, CurrentTime = DateTime.Now });
-            tasks.Add(new Task { NameTask = "zadanie 1", TotalTime = DateTime.MinValue, CurrentTime = DateTime.Now });
-            tasks.Add(new Task { NameTask = "zadanie 3", TotalTime = DateTime.MinValue, CurrentTime = DateTime.Now });
+            tasks.Add(new Task ());
+            
 
             myComboBov.ItemsSource = tasks;
         }

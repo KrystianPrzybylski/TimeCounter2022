@@ -15,7 +15,8 @@ namespace TimeCounter2022.Entities
 
         public Task()
         {
-            this.NameTask ="zad testowe"
+            this.NameTask = "zad testowe1";
+            this.CurrentTime = TimeSpan.Zero;
         }
 
         public string GetAllTime
