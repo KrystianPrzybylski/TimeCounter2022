@@ -10,8 +10,13 @@ namespace TimeCounter2022.Entities
     {
         public int Id { get; set; }
         public string NameTask { get; set; }
-        public DateTime CurrentTime { get; set; }
-        public DateTime TotalTime { get; set; }
+        public TimeSpan CurrentTime { get; set; }
+        public TimeSpan TotalTime { get; set; }
+
+        public Task()
+        {
+            this.NameTask ="zad testowe"
+        }
 
         public string GetAllTime
         {
