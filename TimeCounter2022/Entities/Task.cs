@@ -12,11 +12,25 @@ namespace TimeCounter2022.Entities
         public string NameTask { get; set; }
         public TimeSpan CurrentTime { get; set; }
         public TimeSpan TotalTime { get; set; }
+        DateTime Start { get; set; }  
+        DateTime Stop { get; set; }
+
 
         public Task()
         {
             this.NameTask = "zad testowe1";
             this.CurrentTime = TimeSpan.Zero;
+            this.TotalTime = TimeSpan.Zero; 
+        }
+        public void StartTime()
+        {
+            Start = DateTime.Now;     
+        }
+
+        public void StopTime()
+        {
+            Stop = DateTime.Now;
+            CurrentTime = (Stop - Start).Duration();
         }
 
         public string GetAllTime

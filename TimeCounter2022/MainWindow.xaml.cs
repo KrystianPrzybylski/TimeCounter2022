@@ -36,7 +36,18 @@ namespace TimeCounter2022
 
         private void StartBT_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show($"tekst : { ZadanieTB.Text}");
+            StartBT.IsEnabled = false;
+            tasks.First().StartTime();
+            ZadanieTB.Text = "Rozpoczęto mierzenie czasu dla zadania: " + tasks.First().NameTask;
+            
+        }
+
+        private void StopBT_Click(object sender, RoutedEventArgs e)
+        {
+            tasks[0].StopTime();
+            StartBT.IsEnabled = true;
+            ZadanieTB.Text = $"zmierzony czas : { tasks.First().GetAllTime}";
+            //MessageBox.Show($"tekst : { tasks[0].GetAllTime}");
         }
     }
    

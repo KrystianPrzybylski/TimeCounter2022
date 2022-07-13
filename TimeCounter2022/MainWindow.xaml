@@ -31,18 +31,18 @@
         <TextBlock Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" FontSize="30" Margin="0,0,0,20" >
             Time Counter 2022
         </TextBlock>
-        <TextBlock Grid.Column="1" Grid.Row="2" FontSize="20" FontWeight="Bold">
-            Czas
-        </TextBlock>
-        <TextBox x:Name="ZadanieTB" Grid.Column="2" Grid.Row="2" Width="150"/>
-        <ComboBox x:Name="myComboBov" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2">
+        <TextBlock Grid.Column="1" Grid.Row="2" FontSize="20" FontWeight="Bold" Margin="0,0,0,20">
+            Czas</TextBlock>
+        <TextBox x:Name="ZadanieTB" Grid.Column="2" Grid.Row="2" Width="300" Grid.ColumnSpan="2" Margin="20,0,0,20"/>
+        <ComboBox x:Name="myComboBov" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" Margin="0,0,0,20">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding GetAllTime}"/>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
-        <Button x:Name="StartBT" Content="Rozppocznij ziczanie" Grid.Column="1" Grid.Row="5" Margin="10" Grid.ColumnSpan="2" Click="StartBT_Click"/>
+        <Button x:Name="StartBT" Content="Rozpocznij zadanie" Grid.Column="1" Grid.Row="5" Margin="10" Grid.ColumnSpan="2" Click="StartBT_Click"/>
+		<Button x:Name="StopBT" Content="Zakończ zadanie" Grid.Column="1" Grid.Row="6" Margin="10" Grid.ColumnSpan="2" Click="StopBT_Click"/>
 
         <Image Grid.Row="1" Grid.Column="4" Grid.RowSpan="6" Source=""/>
     </Grid>
