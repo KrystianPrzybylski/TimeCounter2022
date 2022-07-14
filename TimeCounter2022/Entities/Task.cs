@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace TimeCounter2022.Entities
 {
-    public class Task
-    {
-        public int Id { get; set; }
+    public class Task:EntityBase
+    { 
         public string NameTask { get; set; }
         public TimeSpan CurrentTime { get; set; }
         public TimeSpan TotalTime { get; set; }
@@ -33,6 +32,7 @@ namespace TimeCounter2022.Entities
             CurrentTime = (Stop - Start).Duration();
         }
 
+        public override string ToString() => $"Id: {Id}, NameTask: {NameTask}, TotalTime{TotalTime}, CurrentTime: {CurrentTime}";
         public string GetAllTime
         {
             get 

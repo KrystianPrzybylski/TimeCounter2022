@@ -16,15 +16,18 @@ using System.Windows.Shapes;
 namespace TimeCounter2022
 {
     using TimeCounter2022.Entities;
+    using TimeCounter2022.Repository;
 
     
     public partial class MainWindow : Window
     {
+       
         public List<Task> tasks = new List<Task>();
         public MainWindow()
         {
             InitializeComponent();
-
+            var taskRepository = new GenericRepository<Task>();
+            taskRepository.Add(new Task { NameTask = "Zadanie testowe" });
             tasks.Add(new Task ());
             
 
