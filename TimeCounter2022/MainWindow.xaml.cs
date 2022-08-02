@@ -29,6 +29,7 @@ namespace TimeCounter2022
             var taskRepository = new GenericRepository<Task>();
             taskRepository.Add(new Task { NameTask = "Zadanie testowe" });
             tasks.Add(new Task ());
+           
             
 
             myComboBov.ItemsSource = tasks;

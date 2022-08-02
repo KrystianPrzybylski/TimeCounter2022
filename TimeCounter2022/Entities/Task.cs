@@ -37,7 +37,7 @@ namespace TimeCounter2022.Entities
         {
             get 
             { 
-                return $"{CurrentTime} {TotalTime}".ToString(); 
+                return $"{CurrentTime}".ToString(); 
             }
         }
     }
